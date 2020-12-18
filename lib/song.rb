@@ -29,6 +29,10 @@ class Song
     create_name
   end
   
+  def self.find_by_name(name)
+    @@all.each {|song| song.include?(name)}
+  end
+  
 end
 
 
