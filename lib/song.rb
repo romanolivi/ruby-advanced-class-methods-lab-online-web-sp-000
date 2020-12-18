@@ -17,10 +17,20 @@ class Song
   end
   
   def self.new_by_name(name)
-    create_name = self.new 
-    create_name.name = name
-    create_name.save 
+    new_name = self.new 
+    new_name.name = name
+    new_name
+  end
+  
+  def create_by_name(name)
+    create_name = self.new
+    create_name.name = name 
+    create_name.save
     create_name
   end
   
 end
+
+
+
+
